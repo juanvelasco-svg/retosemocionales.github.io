@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Señales Clave</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 20px;
+      padding: 0 15px;
+    }
+    h1 {
+      color: #004aad;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+    a {
+      color: #004aad;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Señales Clave para el Tema Seleccionado</h1>
+    <div id="contenido">
+      <!-- Aquí se cargará contenido dinámico -->
+    </div>
+    <a href="index.html">Volver al inicio</a>
+  </div>
+
+  <script>
+    // Función para mostrar contenido según tema pasado como parámetro URL
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    const señalesData = {
+      "gestion-tiempo": `
+        <p>Señales comunes de dificultad en gestión de tiempo incluyen: falta de planificación, sensación de abrumamiento, retrasos constantes en entregas, y estrés frecuente.</p>
+      `,
+      "ansiedad": `
+        <p>Señales de ansiedad por rendimiento o exámenes: tensión muscular, dificultad para concentrarse, inquietud, y pensamientos negativos sobre el fracaso.</p>
+      `,
+      "emociones": `
+        <p>Señales de mala regulación emocional: explosiones de ira, frustración continua, dificultad para tomar decisiones y sensación de agotamiento emocional.</p>
+      `,
+      "desmotivacion": `
+        <p>Señales de desmotivación: pérdida de interés, apatía, falta de energía para estudiar o participar, y sentimientos de inutilidad.</p>
+      `,
+      "saturacion": `
+        <p>Señales de saturación emocional: cansancio extremo, irritabilidad, aislamiento y dificultad para concentrarse en tareas.</p>
+      `,
+      "presion-excelencia": `
+        <p>Señales de presión por excelencia: miedo a cometer errores, perfeccionismo extremo, autoexigencia desmedida y ansiedad anticipatoria.</p>
+      `,
+      "aislamiento": `
+        <p>Señales de aislamiento: poca interacción social, sentimientos de soledad, dificultad para hacer amigos y tristeza persistente.</p>
+      `,
+      "procrastinar": `
+        <p>Señales de procrastinación: postergar tareas, distracciones frecuentes, sensación de culpa y aumento del estrés por tareas acumuladas.</p>
+      `,
+      "confianza": `
+        <p>Señales de baja confianza: comparación constante, evitación de retos nuevos, falta de iniciativa y sentimientos de inferioridad.</p>
+      `,
+      "eleccion-carrera": `
+        <p>Señales de incertidumbre en elección de carrera: indecisión frecuente, miedo al fracaso, falta de claridad en metas y ansiedad sobre el futuro.</p>
+      `
+    };
+
+    const tema = getQueryParam('tema');
+    const contenido = señalesData[tema] || '<p>No se encontró información para este tema.</p>';
+    document.getElementById('contenido').innerHTML = contenido;
+  </script>
+</body>
+</html>
