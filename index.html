@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apoyo al Estudiante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f0e6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #2f4c84;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Estilos para el contenedor principal para centrar y limitar el ancho */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .section {
+      padding: 20px;
+    }
+    /* Estilos para la nueva tarjeta de sección */
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: flex; /* Usamos flexbox para alinear el emoji y el título */
+      align-items: center; /* Centramos verticalmente */
+      flex-direction: column; /* Apilamos los elementos verticalmente */
+      text-align: center;
+    }
+    /* Contenedor para el título y el emoji */
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Espacio entre el emoji y el título */
+    }
+    .card-content {
+      text-align: left; /* Alineamos el contenido a la izquierda */
+      width: 100%; /* El contenido ocupa todo el ancho disponible */
+    }
+    .card h3 {
+      margin: 0; /* Eliminamos el margen superior por defecto del h3 */
+    }
+    .emoji {
+      font-size: 2rem;
+    }
+    .links-container {
+      display: flex;
+      flex-wrap: wrap; /* Permitimos que los enlaces se envuelvan en líneas nuevas */
+      gap: 10px; /* Espacio entre los enlaces */
+      margin-top: 10px;
+    }
+    .links-container a {
+      display: inline-block;
+      background-color: #3f79f1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .links-container a:hover {
+      background-color: #2e5fc0;
+    }
+    .ayuda {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .ayuda button {
+      display: inline-block;
+      background-color: #7da737;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .ayuda button:hover {
+      background-color: #6a962a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🧠 Apoyo para Estudiantes de Primer Año</h1>
+    <p>Encuentra orientación emocional, académica y motivacional</p>
+  </header>
+  
+  <div class="container">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="emoji">🧐​</span>
+        <h3>Miedo a tomar decisiones</h3>
+      </div>
+      <div class="card-content">
+        <p>Es normal tener inseguridad por la gestión de tiempo, finanzas y hábitos saludables al tomar decisiones de forma autónoma por primera vez.</p>
+        <div class="links-container">
+          <a href="https://www.youtube.com/watch?v=T4ZywTLjl60" target="_blank" rel="noopener">Ver video</a>
+          <a href="senales.html?tema=gestion-tiempo">Señales clave</a>
+          <a href="apps.html?tema=gestion-tiempo">Apps interesantes</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <span class="emoji">🤯</span>
+        <h3>¿Te sientes abrumado?</h3>
+      </div>
+      <div class="card-content">
+        <p>Te presiona el volumen de trabajo, exámenes y miedo al fracaso. Es común experimentar ansiedad por el rendimiento y la adaptación al nuevo entorno.</p>
+        <div class="links-container">
+          <a href="https://www.youtube.com/watch?v=nPjGyGBhhHg" target="_blank" rel="noopener">Ver video</a>
+          <a href="senales.html?tema=ansiedad">Señales clave</a>
+          <a href="apps.html?tema=ansiedad">Apps interesantes</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <span class="emoji">🎭​</span>
+        <h3>¿Te sientes ansioso?</h3>
+      </div>
+      <div class="card-content">
+        <p>Aprende nuevas estrategias para regular emociones intensas como la frustración o el enojo, obstaculizando la toma de decisiones.</p>
+        <div class="links-container">
+          <a href="https://www.youtube.com/watch?v=B7Qb7Um6SHk" target="_blank" rel="noopener">Ver video</a>
+          <a href="senales.html?tema=emociones">Señales clave</a>
+          <a href="apps.html?tema=emociones">Apps interesantes</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <span class="emoji">💡​</span>
+        <h3>¿Estás perdiendo motivación?</h3>
+      </div>
+      <div class="card-content">
+        <p>Es normal sentirse perdido al empezar la universidad. Incluso estudiantes con altas capacidades pueden sentirse desmotivados si los desafíos no están a su altura, conduciendo a la apatía o desinterés.</p>
+        <div class="links-container">
+          <a href="https://www.tiktok.com/@coaching.gifted/video/7472499121505488174" target="_blank" rel="noopener">Ver video</a>
+          <a href="senales.html?tema=desmotivacion">Señales clave</a>
+          <a href="apps.html?tema=desmotivacion">Apps interesantes</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <span class="emoji">📚​</span>
+        <h3>¿Problemas de concentración o sueño?</h3>
+      </div>
+      <div class="card-content">
+        <p>Participar en demasiadas actividades académicas y sociales puede llevar a la saturación, agotamiento y desbordamiento emocional.</p>
+        <div class="links-container">
+          <a href="https://www.tiktok.com/@romirossi_psic/video/7502550030864190727" target="_blank" rel="noopener">Ver video</a>
+          <a href="senales.html?tema=saturacion">Señales clave</a>
+          <a href="apps.html?tema=saturacion">Apps interesantes</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <span class="emoji">🎖️​</span>
+        <h3>¿Estás estresado por los exámenes?</h3>
+      </div>
+      <div class="card-content">
+        <p>Presión interna/externa por la excelencia constante. Puede generar ansiedad, miedo al error y frustración si no se cumplen estándares muy altos.</p>
+        <div class="links-container">
+          <a href="https://www.tiktok.com/@dependencia.academica_/video/7494039213919309062" target="_blank" rel="noopener">Ver video</a>
+          <a href="senales.html?tema=presion-excelencia">Señales clave</a>
+          <a href="apps.html?tema=presion-excelencia">Apps interesantes</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <span class="emoji">😶‍🌫️​</span>
+        <h3>¿Te sientes solo en la universidad?</h3>
+      </div>
+      <div class="card-content">
+        <p>Es un reto emocional muy grande si estas lejos de casa que genera sentimientos de aislamiento y dificultad de hacer nuevas amistades.</p>
+        <div class="links-container">
+          <a href="https://www.tiktok.com/@arivalen28_/video/7519666384108834104" target="_blank" rel="noopener">Ver video</a>
+          <a href="senales.html?tema=aislamiento">Señales clave</a>
+          <a href="apps.html?tema=paislamiento">Apps interesantes</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <span class="emoji">😕​</span>
+        <h3>No logras estudiar</h3>
+      </div>
+      <div class="card-content">
+        <p>Procastrinar es posponer tareas, ligado a la falta de autogestión, miedo al fracaso o perfeccionismo. Afecta el rendimiento y eleva la ansiedad.</p>
+        <div class="links-container">
+          <a href="https://www.tiktok.com/@psicoexistencia/video/7504003440800959750" target="_blank" rel="noopener">Ver video</a>
+          <a href="senales.html?tema=procastrinar">Señales clave</a>
+          <a href="apps.html?tema=procastrinar">Apps interesantes</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <span class="emoji">💔​</span>
+        <h3>No logras ubicarte emocionalmente</h3>
+      </div>
+      <div class="card-content">
+        <p>El cambio de entorno puede afectar la confianza, especialmente al compararse con compañeros o enfrentar dificultades académicas inesperadas.</p>
+        <div class="links-container">
+          <a href="https://www.youtube.com/watch?v=WvI3tnank04" target="_blank" rel="noopener">Ver video</a>
+          <a href="senales.html?tema=confianza">Señales clave</a>
+          <a href="apps.html?tema=confianza">Apps interesantes</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <span class="emoji">👩‍🎓​</span>
+        <h3>¿Dudas sobre tu carrera?</h3>
+      </div>
+      <div class="card-content">
+        <p>Acertar la carrera ideal para ti siendo muy joven, es un reto altísimo y vital.</p>
+        <div class="links-container">
+          <a href="https://www.tiktok.com/@faridieck/video/7038343604200393990" target="_blank" rel="noopener">Ver video</a>
+          <a href="senales.html?tema=eleccion-carrera">Señales clave</a>
+          <a href="apps.html?tema=eleccion-carrera">Apps interesantes</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="ayuda">
+      <p>¿Necesitas hablar con alguien o pedir apoyo personalizado?</p>
+      <button onclick="window.location.href='mailto:ufbi.tutoria@oficinas-upch.pe'">Enviar correo de ayuda</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
